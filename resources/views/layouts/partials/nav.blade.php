@@ -1,5 +1,5 @@
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" href="{{route('home')}}">Lacarte</a>
+    <a class="navbar-brand" href="{{route('home')}}">{{env(`APP_NAME`)}}</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -28,16 +28,16 @@
             <a class="dropdown-item" href="#">Lara</a>
           </div>
         </li>
-        <li class="nav-item">
-            <a class="nav-link" href="#">Contact</a>
+        <li class="{{set_active_route('contact')}}">
+            <a class="nav-link" href="{{route('contact')}}">Contact</a>
         </li>       
       </ul>
       <ul class="navbar-nav navbar-right ">
         <li class="nav-item">
-            <a class="nav-item active" href="#">Login</a>
+            <a class="nav-link" href="#">Login</a>
         </li>
         <li class="nav-item">
-            <a class="nav-item active" href="#">Register</a>
+            <a class="nav-link" href="#">Register</a>
         </li>
       </ul>
     </div>
