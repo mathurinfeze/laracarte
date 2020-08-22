@@ -6,13 +6,13 @@
   
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav mr-auto">
-        <li class="nav-item ">
-          <a class="nav-link" href="{{route('home')}}">Home <span class="sr-only">(current)</span></a>
+      <li class="{{set_active_route('home')}}">
+        <a class="nav-link" href="{{route('home')}}">Home <span class="sr-only">(current)</span></a>
         </li>
-        <li class="nav-item">
-        <a class="nav-link" href="{{route('about')}}">About</a>
+        <li class="{{set_active_route('about')}}">
+          <a class="nav-link" href="{{route('about')}}">About</a>
         </li>
-        <li class="nav-item ">
+        <li class=" ">
           <a class="nav-link" href="#">Artisan</a>
         </li>
         <li class="nav-item  dropdown">
